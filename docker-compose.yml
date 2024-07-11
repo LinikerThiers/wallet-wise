@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:15
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 230102
+      POSTGRES_DB: walletwise
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  spring-app:
+    image: wallet-wise-back-end-image:latest
+    container_name: spring-app
+    ports:
+      - "8080:8080"
+    environment:
+      DB_USERNAME: postgres
+      DB_PASSWORD: 230102
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/walletwise
+    depends_on:
+      - postgres-db
+
+  spa-app:
+    image: wallet-wise-frontend-image:latest
+    container_name: spa-app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - spring-app
+
+volumes:
+  postgres-data:

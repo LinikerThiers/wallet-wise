@@ -1,0 +1,6 @@
+input[type="radio"]{
+    accent-color: #6b21a8; 
+}
+input[type="radio"]:checked{
+    accent-color: #6b21a8; 
+}

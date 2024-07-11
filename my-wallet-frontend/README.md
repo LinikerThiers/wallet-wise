@@ -1,8 +1,18 @@
-# React + Vite
+# Wallet Wise - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O Wallet Wise App é uma aplicação Full-Stack desenvolvida para o controle financeiro pessoal. A principal funcionalidade da aplicação é permitir que os usuários gerenciem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas entradas e saídas de valores em um formato mensal.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como Executar
+- Clonar repositório git:
+```
+git clone https://github.com/LinikerThiers/wallet-wise.git
+```
+- Buildar o projeto:
+```
+npm install
+```
+- Executar o projeto:
+```
+npm run dev
+```
+O projeto ficará acessível em `http://localhost:5173/`.

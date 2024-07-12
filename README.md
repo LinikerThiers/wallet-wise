@@ -90,4 +90,7 @@ A executação deve ser feita com o Docker Compose, caso desejado, é possível 
    **Observação**: Certifique-se de que o PowerShell permite a execução de scripts.
 
 - Acessar aplicação em `http://localhost:5173`.
-   
+
+## Ambiente
+
+Os projetos foram publicados no [Render](https://render.com) e o sistema pode ser acessado [nesse link](https://frontend-wallet-wise.onrender.com).

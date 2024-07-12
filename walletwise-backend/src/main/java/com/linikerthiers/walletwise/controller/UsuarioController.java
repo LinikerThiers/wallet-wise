@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173/register")
+@CrossOrigin(origins = {"http://localhost:5173/register", "https://frontend-wallet-wise.onrender.com"})
 public class UsuarioController {
 
     @Autowired

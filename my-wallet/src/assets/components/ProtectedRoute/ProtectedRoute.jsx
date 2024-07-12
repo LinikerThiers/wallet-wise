@@ -5,7 +5,7 @@ const ProtectedRoute = ({ children }) => {
     const isAuthenticated = !!localStorage.getItem('user');
     const hasResetPasswordData = !!localStorage.getItem('resetPasswordData');
     
-    return (isAuthenticated && hasResetPasswordData) ? children : <Navigate to="/" />;
+    return (isAuthenticated || hasResetPasswordData) ? children : <Navigate to="/" />;
 };
 
 ProtectedRoute.propTypes = {

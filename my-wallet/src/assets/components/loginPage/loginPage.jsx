@@ -25,7 +25,9 @@ function LoginPage() {
             const data = await loginUsuario(email, senha);
             if (data) {
                 localStorage.setItem('user', JSON.stringify(data));
-                navigate('/dashboard');
+                setTimeout(() => {
+                    navigate('/dashboard'); 
+                }, 3000);
             } else {
                 setError('Email ou senha incorretos.');
             }

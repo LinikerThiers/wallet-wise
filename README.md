@@ -92,5 +92,10 @@ A executação deve ser feita com o Docker Compose, caso desejado, é possível 
 - Acessar aplicação em `http://localhost:5173`.
 
 ## Ambiente
-
+- Limitações do Plano Gratuito do Render
+<br/>
+Instâncias gratuitas são desativadas automaticamente após períodos de inatividade. Isso pode resultar na limitação do funcionamento do login ou cadastro no site devido à indisponibilidade temporária do serviço.
 Os projetos foram publicados no [Render](https://render.com) e o sistema pode ser acessado [nesse link](https://frontend-wallet-wise.onrender.com).
+
+
+
